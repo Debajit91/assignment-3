@@ -23,8 +23,8 @@
 </head>
 
 <body class="font-sora">
-    <header class="md:container md:mx-auto">
-        <nav class="border-b-2 lg:border-0 border-[#179800]" data-theme="garden">
+    <header data-theme="garden">
+        <nav class="border-b-2 lg:border-0 border-[#179800] lg:px-36">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <img class="w-[140px]" src="assets/logo-header.png" alt="">
@@ -37,22 +37,24 @@
                     </ul>
                 </div>
                 <div class="navbar-end gap-3">
+                    <i class="fa-solid fa-magnifying-glass text-xl hidden lg:inline"></i>
+                    <i class="fa-solid fa-cart-shopping text-xl hidden lg:inline"></i>
                     <button class="btn border-[#179800] py-2.5 px-7 hidden lg:inline">Login</button>
-                    <button class="btn btn-active btn-accent py-2.5 px-7 text-white hidden lg:inline">Register</button>
+                    <button class="btn btn-active bg-[#179800] py-2.5 px-7 text-white hidden lg:inline">Register</button>
                     <i class="fa-solid fa-bars md:mx-auto lg:hidden"></i>
                 </div>
             </div>
         </nav>
 
         <!-- banner section -->
-        <div class="mt-20 text-center">
-            <h1>Freshness You Can
-                Count On, Prices You’ll Love!</h1>
-                <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        <div class="text-center" data-theme="garden">
+            <h1 class="pt-12 mb-4 lg:mb-8 lg:pt-20 text-4xl lg:text-6xl font-semibold">Freshness <span class="text-[#179800]">You Can <br>
+                Count</span> On, Prices You’ll Love!</h1>
+                <p class="lg:text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
                 <img class="w-full lg:w-[1030px] lg:px-36 lg:pt-9 mx-auto" src="assets/hero-vegetables.png" alt="">
         </div>
     </header>
-
+    
     <main>
 
     </main>
