@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
+    <script src="https://kit.fontawesome.com/466a244139.js" crossorigin="anonymous"></script>
+    <!-- Sora Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+
 </head>
-<body>
-    
+
+<body class="font-sora">
+    <header class="md:container md:mx-auto">
+        <nav class="border-b-2 lg:border-0 border-[#179800]" data-theme="garden">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <img class="w-[140px]" src="assets/logo-header.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-3">
+                    <button class="btn border-[#179800] py-2.5 px-7 hidden lg:inline">Login</button>
+                    <button class="btn btn-active btn-accent py-2.5 px-7 text-white hidden lg:inline">Register</button>
+                    <i class="fa-solid fa-bars md:mx-auto lg:hidden"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <div class="mt-20 text-center">
+            <h1>Freshness You Can
+                Count On, Prices You’ll Love!</h1>
+                <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                <img class="w-full lg:w-[1030px] lg:px-36 lg:pt-9 mx-auto" src="assets/hero-vegetables.png" alt="">
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
