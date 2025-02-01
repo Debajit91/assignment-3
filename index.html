@@ -40,23 +40,27 @@
             font-family: "Poppins", serif;
         }
 
-        @keyframes zooming {
-            from {
-                transform: scale(0.5);
-                opacity: 0;
+        @keyframes floating {
+            0% {
+                transform: translateY(10px);
             }
 
-            to {
-                transform: scale(1);
-                opacity: 1;
+            25% {
+                transform: translateY(-30px);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            75%{
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(10px);
             }
         }
 
         header h1 {
-            animation: zooming 0.5s ease-in-out;
-        }
-        header p {
-            animation: zooming 1.5s ease-in-out;
+            animation: floating 2s ease-in-out infinite;
         }
     </style>
 
@@ -150,7 +154,7 @@
                         <h4 class="font-adlam text-3xl text-white font-semibold mb-5">30% off</h4>
                         <p class="mb-1 lg:mb-3">Enjoy 30% OFF on fresh vegetables and healthy products! Don't miss this
                             chance
-                            to stock up on farm-fresh goodness at unbeatable prices.</p>
+                            to stock up at unbeatable prices.</p>
                         <button class="btn bg-white px-7 py-2.5 rounded-lg">Buy Now</button>
                     </div>
                     <img class="absolute right-1 top-44 lg:top-36 w-44 lg:w-48" src="assets/vegetable-offer.png" alt="">
@@ -161,8 +165,8 @@
                         <div>
                             <i class="fa-solid fa-star text-amber-500"></i>
                             4.5
-                            <h5 class="font-bold">Onion 1 KG</h5>
-                            <p>$39.99</p>
+                            <h5 class=" text-sm font-semibold lg:font-bold">Onion 1 KG</h5>
+                            <p class="text-sm">$39.99</p>
                         </div>
                     </div>
                     <div class="flex justify-start items-center bg-white rounded-xl p-2 gap-3">
@@ -170,8 +174,8 @@
                         <div>
                             <i class="fa-solid fa-star text-amber-500"></i>
                             4.5
-                            <h5 class="font-bold">Tomato 500g</h5>
-                            <p>$39.99</p>
+                            <h5 class="text-sm font-semibold lg:font-bold">Tomato500g</h5>
+                            <p class="text-sm">$39.99</p>
                         </div>
                     </div>
                     <div class="flex justify-start items-center bg-white rounded-xl p-2 gap-3">
@@ -179,8 +183,8 @@
                         <div>
                             <i class="fa-solid fa-star text-amber-500"></i>
                             4.5
-                            <h5 class="font-bold">Potato 1 KG</h5>
-                            <p>$39.99</p>
+                            <h5 class="text-sm font-semibold lg:font-bold">Potato 1 KG</h5>
+                            <p class="text-sm">$39.99</p>
                         </div>
                     </div>
                     <div class="flex justify-start items-center bg-white rounded-xl p-2 gap-3">
@@ -188,8 +192,8 @@
                         <div>
                             <i class="fa-solid fa-star text-amber-500"></i>
                             4.5
-                            <h5 class="font-bold">Tomato 500 g</h5>
-                            <p>$39.99</p>
+                            <h5 class="text-sm font-semibold lg:font-bold">Tomato 1 KG</h5>
+                            <p class="text-sm">$39.99</p>
                         </div>
                     </div>
                     <div class="flex justify-start items-center bg-white rounded-xl p-2 gap-3">
@@ -197,8 +201,8 @@
                         <div>
                             <i class="fa-solid fa-star text-amber-500"></i>
                             4.5
-                            <h5 class="font-bold">Onion 1 KG</h5>
-                            <p>$39.99</p>
+                            <h5 class="text-sm font-semibold lg:font-bold">Onion 1 KG</h5>
+                            <p class="text-sm">$39.99</p>
                         </div>
                     </div>
                     <div class="flex justify-start items-center bg-white rounded-xl p-2 gap-3">
@@ -206,8 +210,8 @@
                         <div>
                             <i class="fa-solid fa-star text-amber-500"></i>
                             4.5
-                            <h5 class="font-bold">Tomato 500 g</h5>
-                            <p>$39.99</p>
+                            <h5 class="text-sm font-semibold lg:font-bold">Tomato500g</h5>
+                            <p class="text-sm">$39.99</p>
                         </div>
                     </div>
                     <div class="flex justify-start items-center bg-white rounded-xl p-2 gap-3">
@@ -215,8 +219,8 @@
                         <div>
                             <i class="fa-solid fa-star text-amber-500"></i>
                             4.5
-                            <h5 class="font-bold">Onion 1 KG</h5>
-                            <p>$39.99</p>
+                            <h5 class="text-sm font-semibold lg:font-bold">Onion 1 KG</h5>
+                            <p class="text-sm">$39.99</p>
                         </div>
                     </div>
                     <div class="flex justify-start items-center bg-white rounded-xl p-2 gap-3">
@@ -224,8 +228,8 @@
                         <div>
                             <i class="fa-solid fa-star text-amber-500"></i>
                             4.5
-                            <h5 class="font-bold">Potato 1 KG</h5>
-                            <p>$39.99</p>
+                            <h5 class="text-sm font-semibold lg:font-bold">Potato 1 KG</h5>
+                            <p class="text-sm">$39.99</p>
                         </div>
                     </div>
                     <div class="lg:flex justify-start items-center bg-white rounded-xl p-2 gap-3 hidden lg:inline">
@@ -336,7 +340,7 @@
                     <p class="mb-4 px-2 lg:mb-6 text-xl">
                         Exclusive training tips, ticks, product deals and more.
                     </p>
-                    <input class="mb-4 lg:mb-6 p-5 w-80 lg:w-[472px] rounded-lg" type="email" name="" id=""
+                    <input class="mb-4 lg:mb-6 p-5 w-80 lg:w-96 rounded-lg" type="email" name="" id=""
                         placeholder="Enter Email..">
                     <br>
                     <button class="btn btn-active bg-[#179800] py-2 px-7 text-white">Subscribe
